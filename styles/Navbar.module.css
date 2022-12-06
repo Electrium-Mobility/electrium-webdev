@@ -1,0 +1,23 @@
+.navbar {
+    text-align: right;
+    background-color: black;
+    min-height: calc(100%);
+}
+
+.item {
+    display: inline-block;
+    padding: 2%;
+    font-size: 1.3rem;
+}
+
+.item:hover {
+    background-color: yellow;
+}
+
+
+
+.logo {
+    margin-top: 1%;
+    display: inline-block;
+    float: left;
+}
