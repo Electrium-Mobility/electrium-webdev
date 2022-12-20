@@ -4,9 +4,8 @@ export default function Header(data:{title: string}) {
         <Head>
             <title>{data.title}</title>
             <meta name="description" content="EMO something something placeholder thing TODO: this" />
-            <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
-            <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#ff0" />
-            <meta property="image" content="/logo.png"/>
+            <meta name="theme-color" content="#0F0"/>
+            <meta property="og:image" content="/logo.png"/>
 
             <link rel="icon" href="/favicon.ico" />
         </Head>
