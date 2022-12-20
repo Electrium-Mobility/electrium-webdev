@@ -7,7 +7,10 @@ import Footer from '../components/footer'
 
 
 export default function Home() {
-  const content = <>Index</>
+  const content = 
+  <>
+  <h1>hey i know you think evehciles are super cool and stuff please join hi</h1>
+  </>
 
   return (
     <Layout{...{content:content, name:"Home"}}/>
