@@ -6,10 +6,10 @@ export default function Navbar() {
     return (
         <>
         <div className={styles.navbar}>
-            <Link className={styles.logo} href="/"><Image src="/logo.png" alt="logo" width={72} height={72}></Image></Link>
-            <Link className={styles.item} href="/about">About</Link>
-            <Link className={styles.item} href="/team">Team</Link>
-            <Link className={styles.item} href="/sponsors">Sponsors</Link>
+            <Link className={styles.logo} href="/"><Image src="/logo.png" alt="logo" fill></Image></Link>
+            <Link className={styles.item} href="/about"><p>About</p></Link>
+            <Link className={styles.item} href="/team"><p>Team</p></Link>
+            <Link className={styles.item} href="/sponsors"><p>Sponsors</p></Link>
         </div>
         
         </>

@@ -7,7 +7,7 @@ export default function Header(data:{title: string}) {
             <meta name="theme-color" content="#0F0"/>
             <meta property="og:image" content="/logo.png"/>
 
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/logo.png" />
         </Head>
     )
 }
