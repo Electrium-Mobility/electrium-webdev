@@ -1,0 +1,17 @@
+
+$footer-background: #393939;
+$footer-text: white;
+$navbar-text: black;
+$navbar-background: #e0e0e0;
+$background: white;
+$text: black;
+
+
+@if (prefers-color-scheme: dark) {
+    $footer-background: #393939;
+    $footer-text: white;
+    $navbar-text: black;
+    $navbar-background: #e0e0e0;
+    $background: white;
+    $text: black;
+}

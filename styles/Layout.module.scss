@@ -1,0 +1,7 @@
+@use "colours.scss";
+
+.main {
+    padding-top: 7vh;
+    min-height: 80vh;
+    background-color: colours.$background;
+}

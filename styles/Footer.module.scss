@@ -1,0 +1,43 @@
+@use "colours.scss";
+
+.footer * {
+    list-style-type: none;
+}
+
+.footer {
+    padding: 2rem 0;
+    bottom: -1;
+    position: absolute;
+    min-width: 100%;
+    background-color: colours.$footer-background;
+    line-height: 2;
+    height: 21vh;
+    color: colours.$footer-text;
+}
+
+.thirtyPercentInlineBlock {
+    width: 30%;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.navigation {
+    text-align: left;
+    margin: auto;
+    display: inline-block;
+}
+
+.navigation ul {
+    font-weight: bold;
+}
+
+.socials {
+    text-align: left;
+    display: inline-block;
+}
+
+.contact {
+    text-align: left;
+    display: inline-block;
+}

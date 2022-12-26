@@ -1,12 +1,18 @@
+@use "colours.scss";
+
 .navbar {
+    top: 0;
+    position: fixed;
+    width: 100%;
     text-align: right;
-    background-color: black;
+    background-color: colours.$navbar-background;
+    color:colours.$navbar-text;
     height: 7vh;
 }
 
 .item {
     display: inline-block;
-    width: 15%;
+    width: 10%;
     font-size: 1.3rem;
     text-align: center;
     height: 7vh;
