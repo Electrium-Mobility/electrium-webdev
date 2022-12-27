@@ -19,7 +19,7 @@ export default function Home() {
   <hr className={styles.hr}></hr>
   <div className={styles.sponsorsDisplay}>
     {sponsors.map((sponsor: Sponsor, i:number) => (
-      <Link href={sponsor.link} className={styles.sponsorCard}><Image src={sponsor.image} alt={sponsor.name} fill></Image></Link>
+      <Link key={i} href={sponsor.link} className={styles.sponsorCard}><Image src={sponsor.image} alt={sponsor.name} fill></Image></Link>
     ))}
   </div>
   </>
