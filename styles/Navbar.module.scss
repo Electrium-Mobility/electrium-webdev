@@ -8,14 +8,20 @@
     background-color: colours.$navbar-background;
     color:colours.$navbar-text;
     height: 7vh;
+    vertical-align: middle;
+
 }
 
 .item {
+    height: 100%;
+    margin: 0 auto;
     display: inline-block;
-    width: 10%;
+    width: 15vw;
     font-size: 1.3rem;
     text-align: center;
-    height: 7vh;
+    max-height: 7vh;
+    top: 0;
+    padding: 0;
 }
 
 

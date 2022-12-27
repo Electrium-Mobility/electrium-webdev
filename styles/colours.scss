@@ -6,6 +6,9 @@ $navbar-text: black;
 $navbar-background: #e0e0e0;
 $background: white;
 $text: black;
+$button-a: black;
+$button-b: white;
+$hr-colour: #d5d5d5;
 
 // dark mode
 @if (prefers-color-scheme: dark) {
@@ -15,4 +18,7 @@ $text: black;
     $navbar-background: #e0e0e0;
     $background: white;
     $text: black;
+    $button-a: black;
+    $button-b: white;
+    $hr-colour: #d5d5d5;
 }

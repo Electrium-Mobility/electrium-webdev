@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import { links, NavLink } from "../data/navigation";
-import { socials, Social } from '../data/socials';
+import { links, socials, NavLink } from "../data/links";
 import styles from '../styles/Footer.module.scss'
 import Link from 'next/link'
 
@@ -20,7 +19,7 @@ export default function Footer() {
           <div className={styles.socials}>
             <ul>
               <li><b>Socials</b></li>
-              {socials.map((social: Social, i:number) => (
+              {socials.map((social: NavLink, i:number) => (
                 <li key={i}><Link href={social.path}>{social.name}</Link></li>
               ))}
             </ul>

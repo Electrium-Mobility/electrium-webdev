@@ -8,6 +8,8 @@ export default function Header(data:{title: string}) {
             <meta property="og:image" content="/logo.png"/>
 
             <link rel="icon" href="/logo.png" />
+
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"></link>
         </Head>
     )
 }

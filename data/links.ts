@@ -18,6 +18,21 @@ export const links = [
     
 ]
 
+export const socials = [
+    {
+        name: "Instagram",
+        path: ""
+    },
+    {
+        name: "Facebook",
+        path: ""
+    },
+    {
+        name: "Linkedin",
+        path: ""
+    },
+];
+
 export interface NavLink {
     name: string,
     path: string
