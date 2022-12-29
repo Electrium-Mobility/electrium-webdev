@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Layout from '../components/layout'
 import styles from '../styles/Home.module.scss'
 import {sponsors, Sponsor} from "../data/sponsors";
+import { missionCards, Card } from '../data/cards';
 import Link from 'next/link'
 
 
@@ -22,6 +23,20 @@ export default function Home() {
       <Link key={i} href={sponsor.link} className={styles.sponsorCard}><Image src={sponsor.image} alt={sponsor.name} fill></Image></Link>
     ))}
   </div>
+  <div className={styles.mission}>
+    <h2>Our Mission</h2>
+    <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    {missionCards.map((missionCard: Card, i:number) => (
+      <div key={i} className={styles.missionCard}>
+        <div>
+          <Image src={missionCard.image} alt={missionCard.title} fill></Image>
+        </div>
+        <h4>{missionCard.title}</h4>
+        <p>{missionCard.description}</p>
+      </div>
+    ))}
+  </div>
+  <div></div>
   </>
 
   return (

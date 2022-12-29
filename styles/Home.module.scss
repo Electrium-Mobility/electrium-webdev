@@ -15,12 +15,12 @@
 }
 
 .hero h1 {
-  font-size: 6em;
+  font-size: 5em;
   font-weight: bold;
 }
 
 .hero h3 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .join {
@@ -40,7 +40,8 @@
 }
 
 .sponsorsDisplay {
-  height: 10vh;
+  margin: auto;
+  width: 80%;
   text-align: center;
 }
 
@@ -48,5 +49,32 @@
   height: 10vh;
   width: 10vh;
   display: inline-block;
+  position: relative;
+}
+
+.mission {
+  background-color: colours.$secondary-background;
+  width: 100vw;
+  text-align: center;
+}
+
+.mission h2 {
+  font-size: 3em;
+}
+
+.mission p {
+  font-size: 1.2em;
+  width: 80%;
+  margin: auto;
+}
+
+.missionCard {
+  width: 30%;
+  display: inline-block;
+}
+
+.missionCard div {
+  width: 30vw;
+  height: 20vw;
   position: relative;
 }

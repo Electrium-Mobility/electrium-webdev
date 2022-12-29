@@ -4,11 +4,12 @@ $footer-background: #393939;
 $footer-text: white;
 $navbar-text: black;
 $navbar-background: #e0e0e0;
-$background: white;
-$text: black;
+$primary-background: white;
+$primary-text: black;
 $button-a: black;
 $button-b: white;
 $hr-colour: #d5d5d5;
+$secondary-background: #f4f4f4;
 
 // dark mode
 @if (prefers-color-scheme: dark) {
@@ -16,9 +17,10 @@ $hr-colour: #d5d5d5;
     $footer-text: white;
     $navbar-text: black;
     $navbar-background: #e0e0e0;
-    $background: white;
-    $text: black;
+    $primary-background: white;
+    $primary-text: black;
     $button-a: black;
     $button-b: white;
     $hr-colour: #d5d5d5;
+    $secondary-background: #f4f4f4;
 }
