@@ -2,9 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Layout from '../components/layout'
 import styles from '../styles/Home.module.scss'
+import { buttonA, buttonB } from "../styles/_next_access.module.scss";
 import {sponsors, Sponsor} from "../data/sponsors";
 import { missionCards, Card } from '../data/cards';
 import Link from 'next/link'
+import Button from '../components/button';
 
 
 
@@ -14,8 +16,8 @@ export default function Home() {
   <div className={styles.hero}>
     <h1>Electrium Mobility</h1>
     <h3>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar.</h3>
-    <button className={styles.join}><Link href="/join">Join us</Link></button>
-    <button className={styles.sponsors}><Link href="/sponsors">Become a sponsor</Link></button>
+    <Button backgroundColour={buttonB} href={"/join"} content={"Join us"} textColour={buttonA}></Button>
+    <Button backgroundColour={buttonA} href={"/sponsors"} content={"Become a sponsor"} textColour={buttonB}></Button>
   </div>
   <hr className={styles.hr}></hr>
   <div className={styles.sponsorsDisplay}>

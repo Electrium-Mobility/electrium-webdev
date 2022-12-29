@@ -5,15 +5,6 @@
   line-height: 1.5;
 }
 
-.hero button {
-  font-family: Inter;
-  border-radius: 0.3em;
-  border: 1px colours.$button-a solid;
-  font-size: 1.3em;
-  padding: 0.3em;
-  margin: 0.5em;
-}
-
 .hero h1 {
   font-size: 5em;
   font-weight: bold;
@@ -21,16 +12,6 @@
 
 .hero h3 {
   font-size: 2em;
-}
-
-.join {
-  background-color: colours.$button-b;
-  color: colours.$button-a;
-}
-
-.sponsors {
-  background-color: colours.$button-a;
-  color: colours.$button-b;
 }
 
 .hr {

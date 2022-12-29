@@ -1,0 +1,8 @@
+@use "colours.scss";
+
+$button-a: colours.$button-a;
+
+:export {
+  buttonA: $button-a;
+  buttonB: colours.$button-b;
+}
