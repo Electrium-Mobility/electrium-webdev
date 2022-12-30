@@ -3,6 +3,7 @@
 .hero {
   text-align: center;
   line-height: 1.5;
+  // height: 100vh;
 }
 
 .hero h1 {
@@ -37,6 +38,8 @@
   background-color: colours.$secondary-background;
   width: 100vw;
   text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .mission h2 {
@@ -58,4 +61,38 @@
   width: 30vw;
   height: 20vw;
   position: relative;
+}
+
+.about {
+  padding-top: 2%;
+  background-color: colours.$primary-background;
+  color: colours.$primary-text;
+  width: 100vw;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.textHolder {
+  width: 30%;
+  display: inline-block;
+  margin: auto;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.imageHolder {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 30%;
+  position: relative;
+  display: inline-block;
+  height: 20vw;
+}
+
+.contact {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: colours.$secondary-background;
 }

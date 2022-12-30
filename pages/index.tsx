@@ -18,12 +18,12 @@ export default function Home() {
     <h3>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar.</h3>
     <Button backgroundColour={variables.buttonB} href={"/join"} content={"Join us"} textColour={variables.buttonA}></Button>
     <Button backgroundColour={variables.buttonA} href={"/sponsors"} content={"Become a sponsor"} textColour={variables.buttonB}></Button>
-  </div>
-  <hr className={styles.hr}></hr>
-  <div className={styles.sponsorsDisplay}>
-    {sponsors.map((sponsor: Sponsor, i:number) => (
-      <Link key={i} href={sponsor.link} className={styles.sponsorCard}><Image src={sponsor.image} alt={sponsor.name} fill></Image></Link>
-    ))}
+    <hr className={styles.hr}></hr>
+    <div className={styles.sponsorsDisplay}>
+      {sponsors.map((sponsor: Sponsor, i:number) => (
+        <Link key={i} href={sponsor.link} className={styles.sponsorCard}><Image src={sponsor.image} alt={sponsor.name} fill></Image></Link>
+      ))}
+    </div>
   </div>
   <div className={styles.mission}>
     <h2>Our Mission</h2>
@@ -38,7 +38,27 @@ export default function Home() {
       </div>
     ))}
   </div>
-  <div></div>
+  <div className={styles.about}>
+    <div className={styles.textHolder}>
+      <h2>Who we are</h2>
+      <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div className={styles.imageHolder}>
+      <Image src="/logo.png" alt="who we are" fill></Image>
+    </div>
+    <br></br>
+    <div className={styles.imageHolder}>
+      <Image src="/logo.png" alt="who we are" fill></Image>
+    </div>
+    <div  className={styles.textHolder}>
+      <h2>What we do</h2>
+      <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <div  className={styles.contact}>
+    <h2>Interested in our work?</h2>
+    <Button backgroundColour={variables.buttonA} href={"mailto:electriummobility@gmail.com"} content={"Contact us"} textColour={variables.buttonB}></Button>
+  </div>
   </>
 
   return (
