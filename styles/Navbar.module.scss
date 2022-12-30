@@ -4,39 +4,49 @@
     top: 0;
     position: fixed;
     width: 100%;
-    text-align: right;
     background-color: colours.$navbar-background;
     color:colours.$navbar-text;
     height: 7vh;
-    vertical-align: middle;
     z-index: 100;
 }
 
+.rightAlign {
+    display: inline-block;
+    text-align: right;
+    width: 80vw;
+}
+
+// .navbar * :hover {
+//     filter: invert(100%);
+// }
+
 .item {
     height: 100%;
-    margin: 0 auto;
+    margin: auto;
     display: inline-block;
-    width: 15vw;
     font-size: 1.3rem;
     text-align: center;
     max-height: 7vh;
-    top: 0;
-    padding: 0;
+    padding: 0.5%;
 }
-
 
 .item:hover {
-    background-color: yellow;
+    filter: invert(100%);
 }
+
+// .item:hover {
+//     background-color: yellow;
+// }
 
 
 
 .logo {
-    padding: 5vh;
+    padding: 0.5%;
+    font-size: 1.3rem;
     display: inline-block;
-    left: 0;
-    position: absolute;
-
+    text-align: left;
+    height: 100%;
+    width: 18vw;
 }
 
 .logo:hover {

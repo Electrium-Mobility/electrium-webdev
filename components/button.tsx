@@ -11,8 +11,8 @@ export default function Button(info:{
         <>
             <button className={styles.button} style={{
                 ["background-color" as any]: info.backgroundColour,
-                ["color" as any]: info.textColour,
-                ["border-color" as any]: info.textColour}}><Link href={info.href}>{info.content}</Link></button>
+                ["color" as any]: info.textColour}}>
+                    <Link href={info.href}>{info.content}</Link></button>
         </>
     )
 }
