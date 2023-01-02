@@ -1,8 +1,7 @@
 @use "colours.scss";
 
-$button-a: colours.$button-a;
-
 :export {
-  buttonA: $button-a;
+  buttonA: colours.$button-a;;
   buttonB: colours.$button-b;
+  buttonC: colours.$navbar-background;
 }

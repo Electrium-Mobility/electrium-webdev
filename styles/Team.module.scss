@@ -1,0 +1,29 @@
+@use "colours.scss";
+
+.topSection {
+    width: 100vw;
+    padding: 5%;
+}
+
+.topTextHolder {
+    width: 80%;
+    display: inline-block;
+}
+
+.topTextHolder h1 {
+    font-size: 4em;
+}
+
+.topTextHolder b {
+    font-size: 1.5em;
+}
+
+.teamList {
+    padding: 5%;
+    background-color: colours.$secondary-background;
+}
+
+.joinNow {
+    padding: 5%;
+    text-align: center;
+}

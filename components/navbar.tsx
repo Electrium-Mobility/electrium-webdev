@@ -11,7 +11,7 @@ export default function Navbar() {
             <div className={styles.rightAlign}>
                 <Link href="/about" className={styles.item}>About</Link>
                 <Link href="/team" className={styles.item}>Team</Link>
-                <Button backgroundColour={undefined} href={"/join"} content={"Join us"} textColour={variables.buttonA}></Button>
+                <Button backgroundColour={variables.buttonC} href={"/join"} content={"Join us"} textColour={variables.buttonA}></Button>
                 <Button backgroundColour={variables.buttonA} href={"/sponsors"} content={"Become a sponsor"} textColour={variables.buttonB}></Button>
             </div>
         </div>
