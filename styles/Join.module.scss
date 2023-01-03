@@ -3,6 +3,8 @@
 .topThing {
     width: 100vw;
     padding: 5%;
+    padding-left: 10%;
+    background-color: colours.$primary-background;  
 }
 
 .topTextWrapper {
@@ -21,5 +23,65 @@
 .whyJoin {
     width: 100%;
     padding: 5%;
+    padding-left: 10%;
     background-color: colours.$secondary-background;
+}
+
+.howApply {
+    background-color: colours.$primary-background;
+    width: 100vw;
+    padding: 5%;
+    padding-left: 10%;
+}
+
+.greyCircle {
+    border-radius: 100%;
+    background-color: colours.$circle-background;
+    width: 1.5em;
+    height: 1.5em;
+    justify-content: center;
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    width: 35vw;
+    height: 15vw;
+    position: relative;
+}
+
+.faq {
+    background-color: colours.$secondary-background;
+    width: 100vw;
+    padding: 5%;
+    padding-left: 10%;
+}
+
+.question {
+    border-top: 1px solid colours.$primary-text;
+    // border-bottom: 1px solid colours.$primary-text;
+    display: table-column;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.question summary {
+    list-style-type: none;
+}
+
+.questionText {
+    display: inline-block;
+    width: 90%;
+}
+
+.arrowDown {
+    display: inline-block;
+    text-align: right;
+    width: 8%;
+}
+
+.interested {
+    width: 100vw;
+    text-align: center;
+    padding: 5%;
 }

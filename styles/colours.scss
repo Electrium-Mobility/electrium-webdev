@@ -10,6 +10,7 @@ $button-a: black;
 $button-b: white;
 $hr-colour: #d5d5d5;
 $secondary-background: #f4f4f4;
+$circle-background: #d9d9d9;
 
 // dark mode
 @if (prefers-color-scheme: dark) {
@@ -23,4 +24,5 @@ $secondary-background: #f4f4f4;
     $button-b: white;
     $hr-colour: #d5d5d5;
     $secondary-background: #f4f4f4;
+    $circle-background: #d9d9d9;
 }
