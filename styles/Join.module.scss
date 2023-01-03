@@ -1,0 +1,25 @@
+@use "colours.scss";
+
+.topThing {
+    width: 100vw;
+    padding: 5%;
+}
+
+.topTextWrapper {
+    width: 80%;
+    display: inline-block;
+}
+
+.topTextWrapper h1 {
+    font-size: 4em;
+}
+
+.topTextWrapper p {
+    font-size: 1.5em;
+}
+
+.whyJoin {
+    width: 100%;
+    padding: 5%;
+    background-color: colours.$secondary-background;
+}
