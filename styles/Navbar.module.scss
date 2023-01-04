@@ -1,6 +1,7 @@
 @use "colours.scss";
 
 .navbar {
+    font-size: 1vw;
     top: 0;
     position: fixed;
     width: 100%;
@@ -8,26 +9,34 @@
     color:colours.$navbar-text;
     height: 7vh;
     z-index: 100;
+    
 }
 
 .rightAlign {
     display: inline-block;
     text-align: right;
-    width: 80vw;
+    width: 60%;
+    height: 100%;
+    margin: 0;
 }
 
 // .navbar * :hover {
 //     filter: invert(100%);
 // }
+ 
+.fakeThing {
+    justify-content: center;
+    vertical-align: middle;
+    height: 100%;
+    display: inline-block;
+}
 
 .item {
-    height: 100%;
     margin: auto;
     display: inline-block;
-    font-size: 1.3rem;
-    text-align: center;
-    max-height: 7vh;
+    // max-height: 7vh;
     padding: 0.5%;
+    font-size: 1.5vw;
 }
 
 .item:hover {
@@ -42,11 +51,10 @@
 
 .logo {
     padding: 0.5%;
-    font-size: 1.3rem;
     display: inline-block;
     text-align: left;
-    height: 100%;
-    width: 18vw;
+    width: 40%;
+    font-size: 2vw;
 }
 
 .logo:hover {

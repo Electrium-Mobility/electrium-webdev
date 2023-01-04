@@ -9,6 +9,7 @@ export default function Navbar() {
         <div className={styles.navbar}>
             <Link className={styles.logo} href="/">Electrium Mobility</Link>
             <div className={styles.rightAlign}>
+                <div className={styles.fakeThing}></div>
                 <Link href="/about" className={styles.item}>About</Link>
                 <Link href="/team" className={styles.item}>Team</Link>
                 <Button backgroundColour={variables.buttonC} href={"/join"} content={"Join us"} textColour={variables.buttonA}></Button>
