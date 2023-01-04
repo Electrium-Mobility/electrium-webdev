@@ -53,7 +53,7 @@ export default function Join() {
         <div className={styles.faq}>
             <h2>FAQ</h2>
             {faq.map((qa:QA, i:number) => (
-                <details className={styles.question}>
+                <details key={i} className={styles.question}>
                     <summary><p className={styles.questionText}>{qa.question}</p><p className={styles.arrowDown}>&#x2228;</p></summary>
                     <p>{qa.answer}</p>
                 </details>
