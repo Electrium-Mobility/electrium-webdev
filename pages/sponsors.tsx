@@ -17,8 +17,8 @@ export default function Sponsors() {
         </div>
         <div className={styles.imagesSection}>
             {sponsors.map((sponsor: Sponsor, i: number) => (
-                <div className={styles.imageContainer}>
-                    <Image key={i} src={sponsor.image} alt={sponsor.name} fill></Image>
+                <div key={i} className={styles.imageContainer}>
+                    <Image src={sponsor.image} alt={sponsor.name} fill></Image>
                 </div>
             ))}
         </div>
