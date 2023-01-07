@@ -1,0 +1,44 @@
+@use "colours.scss";
+
+.topSection {
+    background-color: colours.$primary-background;
+    color: colours.$primary-text;
+    padding: 5%;
+}
+
+.topLeftSide {
+    width: 70%;
+    display: inline-block;
+}
+
+.topLeftSide h1 {
+    font-size: 3vw;
+}
+
+.topLeftSide p {
+    font-size: 1vw;
+}
+
+.imagesSection {
+    background-color: colours.$secondary-background;
+    padding: 5%;
+    text-align: center;
+}
+
+.imageContainer {
+    position: relative;
+    display: inline-block;
+    width: 25vw;
+    height: 20vw;
+}
+
+.bottomSection {
+    background-color: colours.$primary-background;
+    color: colours.$primary-text;
+    padding: 5%;
+}
+
+.textContainer {
+    width: 60%;
+    display: inline-block;
+}
