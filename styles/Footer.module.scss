@@ -5,10 +5,11 @@
 }
 
 .footer {
-    padding: 2rem 0;
+    padding: 2vw 0;
     bottom: -1;
     position: absolute;
-    min-width: 100%;
+    min-width: 100vw;
+    min-height: 256px;
     background-color: colours.$footer-background;
     line-height: 2;
     height: 21vh;
