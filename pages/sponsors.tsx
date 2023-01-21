@@ -27,7 +27,7 @@ export default function Sponsors() {
             <div className={styles.textContainer}>
                 <h2>Contact us</h2>
                 <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href={ "mailto:" + email } target="_blank">{ email }</a>
+                <a href={ "mailto:" + email }>{ email }</a>
             </div>
             <div className={styles.imageContainer}>
                 <Image src="/logo.png" alt="idk" fill></Image>
