@@ -7,15 +7,15 @@ import {sponsors, Sponsor} from "../data/sponsors";
 import { missionCards, Card } from '../data/cards';
 import Link from 'next/link'
 import Button from '../components/button';
-
+import { title, siteDescription, missionDescription} from "../data/config";
 
 
 export default function Home() {
   const content = 
   <>
   <div className={styles.hero}>
-    <h1>Electrium Mobility</h1>
-    <h3>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar.</h3>
+    <h1>{title}</h1>
+    <h3>{ siteDescription }</h3>
     <Button backgroundColour={variables.buttonB} href={"/join"} content={"Join us"} textColour={variables.buttonA}></Button>
     <Button backgroundColour={variables.buttonA} href={"/sponsors"} content={"Become a sponsor"} textColour={variables.buttonB}></Button>
     <hr className={styles.hr}></hr>
@@ -27,7 +27,7 @@ export default function Home() {
   </div>
   <div className={styles.mission}>
     <h2>Our Mission</h2>
-    <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>{ missionDescription }</p>
     {missionCards.map((missionCard: Card, i:number) => (
       <div key={i} className={styles.missionCard}>
         <div>

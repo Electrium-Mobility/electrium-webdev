@@ -4,6 +4,7 @@ import Button from "../components/button"
 import variables from "../styles/_next_access.module.scss"
 import { Sponsor, sponsors } from "../data/sponsors"
 import Image from "next/image"
+import { email } from "../data/config";
 
 export default function Sponsors() {
     const content = (
@@ -26,7 +27,7 @@ export default function Sponsors() {
             <div className={styles.textContainer}>
                 <h2>Contact us</h2>
                 <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>electriummobility@gmail.com</p>
+                <a href={ "mailto:" + email } target="_blank">{ email }</a>
             </div>
             <div className={styles.imageContainer}>
                 <Image src="/logo.png" alt="idk" fill></Image>

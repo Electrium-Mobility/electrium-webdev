@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { links, socials, NavLink } from "../data/links";
 import styles from '../styles/Footer.module.scss'
 import Link from 'next/link'
+import { email } from "../data/config";
 
 export default function Footer() {
     return (
@@ -29,7 +30,7 @@ export default function Footer() {
           <div className={styles.contact}>
             <ul>
               <li><b>Contact us</b></li>
-              <li><Link href="mailto:electriummobility@gmail.com">electriummobility@gmail.com</Link></li>
+              <li><Link href={"mailto:" + email }>{ email }</Link></li>
               <br></br>
               <li><b>@Electrium Mobility 2022</b></li>
             </ul>
