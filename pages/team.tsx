@@ -16,19 +16,19 @@ export default function Team() {
             <Button backgroundColour={variables.buttonB} href={"/join"} content={"Join us"} textColour={variables.buttonA}></Button>
         </div>
         <div className={styles.teamList}>
-            <h3>Team 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            {teamOne.map((member:Member, i:number) => (
+            <h3>{teamOne.title}</h3>
+            <p>{teamOne.description}</p>
+            {teamOne.teamMembers.map((member:Member, i:number) => (
                 <Card key={i} picture={member.image} name={member.fullName} role={member.role} description={member.description}></Card>
             ))}
-            <h3>Team 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            {teamTwo.map((member:Member, i:number) => (
+            <h3>{teamTwo.title}</h3>
+            <p>{teamTwo.description}</p>
+            {teamTwo.teamMembers.map((member:Member, i:number) => (
                 <Card key={i} picture={member.image} name={member.fullName} role={member.role} description={member.description}></Card>
             ))}
-            <h3>Team 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            {teamThree.map((member:Member, i:number) => (
+            <h3>{teamThree.title}</h3>
+            <p>{teamThree.description}</p>
+            {teamThree.teamMembers.map((member:Member, i:number) => (
                 <Card key={i} picture={member.image} name={member.fullName} role={member.role} description={member.description}></Card>
             ))}
         </div>
