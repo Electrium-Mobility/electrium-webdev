@@ -73,18 +73,21 @@
 }
 
 .textHolder {
-  width: 30%;
+  width: 30vw;
+  height: 20vw;
   display: inline-block;
   margin: auto;
   text-align: left;
   padding-left: 5%;
   padding-right: 5%;
+  vertical-align: middle;
 }
 
 .imageHolder {
+
   padding-left: 5%;
   padding-right: 5%;
-  width: 30%;
+  width: 30vw;
   position: relative;
   display: inline-block;
   height: 20vw;
@@ -95,4 +98,11 @@
   padding-bottom: 2%;
   text-align: center;
   background-color: colours.$secondary-background;
+}
+
+.thingHolder {
+  position: relative;
+  height: 20vw;
+  width: 100%;
+  display: inline-block;
 }

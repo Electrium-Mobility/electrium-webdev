@@ -30,7 +30,7 @@ export default function Sponsors() {
                 <a href={ "mailto:" + email }>{ email }</a>
             </div>
             <div className={styles.imageContainer}>
-                <Image src="/logo.png" alt="idk" fill></Image>
+                <Image src="/imgs/contact_us.svg" alt="idk" fill></Image>
             </div>
         </div>
         </>

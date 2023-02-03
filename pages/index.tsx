@@ -39,20 +39,24 @@ export default function Home() {
     ))}
   </div>
   <div className={styles.about}>
-    <div className={styles.textHolder}>
-      <h2>Who we are</h2>
-      <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div className={styles.imageHolder}>
-      <Image src="/logo.png" alt="who we are" fill></Image>
+    <div className={styles.thingHolder}>
+      <div className={styles.textHolder}>
+        <h2>Who we are</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div className={styles.imageHolder}>
+        <Image src="/imgs/who_we_are.svg" alt="who we are" fill></Image>
+      </div>
     </div>
     <br></br>
-    <div className={styles.imageHolder}>
-      <Image src="/logo.png" alt="who we are" fill></Image>
-    </div>
-    <div  className={styles.textHolder}>
-      <h2>What we do</h2>
-      <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div className={styles.thingHolder}>
+      <div className={styles.imageHolder}>
+        <Image src="/imgs/what_we_do.svg" alt="what we do" fill></Image>
+      </div>
+      <div  className={styles.textHolder}>
+        <h2>What we do</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
     </div>
   </div>
   <div  className={styles.contact}>
