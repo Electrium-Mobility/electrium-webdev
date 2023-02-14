@@ -1,6 +1,5 @@
 
 // light mode
-$theme-colour: #0ff;
 $footer-background: #393939;
 $footer-text: white;
 $navbar-text: black;
@@ -15,15 +14,14 @@ $circle-background: #d9d9d9;
 
 // dark mode
 @if (prefers-color-scheme: dark) {
-    $theme-colour: #00f;
     $footer-background: #393939;
     $footer-text: white;
-    $navbar-text: black;
-    $navbar-background: #e0e0e0;
-    $primary-background: white;
-    $primary-text: black;
-    $button-a: black;
-    $button-b: white;
+    $navbar-text: white;
+    $navbar-background: #424242;
+    $primary-background: #222;
+    $primary-text: white;
+    $button-a: white;
+    $button-b: black;
     $hr-colour: #d5d5d5;
     $secondary-background: #f4f4f4;
     $circle-background: #d9d9d9;

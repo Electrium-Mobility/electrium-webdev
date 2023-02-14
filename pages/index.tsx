@@ -17,7 +17,7 @@ export default function Home() {
   <div className={styles.hero}>
     <div className={styles.heroTitle}>
       
-      <Image src="/logo_long_light.png" alt="Electrium Mobility" fill ></Image>  
+      <Image src={(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? "/logo_long_dark.png" : "/logo_long_light.png"} alt="Electrium Mobility" fill ></Image>  
     </div>
     <h3>{ siteDescription }</h3>
     <Button backgroundColour={variables.buttonB} href={"/join"} content={"Join us"} textColour={variables.buttonA}></Button>
