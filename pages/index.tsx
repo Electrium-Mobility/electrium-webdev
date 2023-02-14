@@ -12,15 +12,17 @@ import { title, siteDescription, missionDescription} from "../data/config";
 
 export default function Home() {
   //TODO: get images to display dark/light based on preferred colour scheme
-  let src:string = "/logo_long_light.png"; 
+  let src:string = ""; 
 
   const content = 
   <>
   <div className={styles.hero}>
     <div className={styles.heroTitle}>
       
-      <Image src={src} alt="Electrium Mobility" fill 
-      onLoadingComplete={() => (window != undefined && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? src = "/logo_long_dark.png": src= "/logo_long_light.png"}></Image>  
+      <Image src={src} alt={title} fill id="heroImage"
+      onLoadingComplete={() => (window != undefined && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? 
+      document.getElementById("heroImage").src = "/logo_long_dark.png": 
+      document.getElementById("heroImage").src= "/logo_long_light.png"}></Image>  
     </div>
     <h3>{ siteDescription }</h3>
     <Button backgroundColour={variables.buttonB} href={"/join"} content={"Join us"} textColour={variables.buttonA}></Button>

@@ -9,7 +9,10 @@ export default function Navbar() {
         <>
         <div className={styles.navbar}>
             <Link className={styles.logo} href="/">
-                <Image src="/logo_long_light.png" alt="Electrium Mobility" fill></Image>
+                <Image src="" alt="Electrium Mobility" fill id="navImg"
+                onLoadingComplete={() => (window != undefined && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? 
+                document.getElementById("navImg").src = "/logo_long_dark.png": 
+                document.getElementById("navImg").src= "/logo_long_light.png"}></Image>
             </Link>
             <div className={styles.addSpace}></div>
             <div className={styles.rightAlign}>
