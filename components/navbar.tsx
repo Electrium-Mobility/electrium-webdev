@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className={styles.navbar}>
             <Link className={styles.logo} href="/">
                 <Image src="" alt="Electrium Mobility" fill id="navImg"
-                onLoadingComplete={() => (window != undefined && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? 
+                onLoad={() => (window != undefined && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? 
                 document.getElementById("navImg")!.setAttribute("src", "/logo_long_dark.png"): 
                 document.getElementById("navImg")!.setAttribute("src", "/logo_long_light.png")}></Image>
             </Link>
