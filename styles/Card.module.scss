@@ -17,6 +17,12 @@
     transition: 1s;
 }
 
+.imageHolder img {
+    border-radius: 100%;
+    filter: blur(0px) brightness(100%);
+    transition: 1s;
+}
+
 .imageHolder p {
     
     color: transparent;
