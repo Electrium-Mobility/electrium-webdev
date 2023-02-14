@@ -18,7 +18,7 @@ export default function Home() {
   <div className={styles.hero}>
     <div className={styles.heroTitle}>
       
-      <Image src="" alt={title} fill id="heroImage"
+      <Image src="/logo_long_light.png" alt={title} fill id="heroImage"
       onLoad={() => (window != undefined && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? 
       (document.getElementById("heroImage")!).setAttribute("src", "/logo_long_dark.png"): 
       document.getElementById("heroImage")!.setAttribute("src", "/logo_long_light.png")}></Image>  
