@@ -9,7 +9,7 @@ export default function Navbar() {
         <>
         <div className={styles.navbar}>
             <Link className={styles.logo} href="/">
-                <Image src={(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? "/logo_long_dark.png" : "/logo_long_light.png"} alt="Electrium Mobility" fill></Image>
+                <Image src={(window && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? "/logo_long_dark.png" : "/logo_long_light.png"} alt="Electrium Mobility" fill></Image>
             </Link>
             <div className={styles.addSpace}></div>
             <div className={styles.rightAlign}>
