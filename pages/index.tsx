@@ -11,10 +11,14 @@ import { title, siteDescription, missionDescription} from "../data/config";
 
 
 export default function Home() {
+  //TODO: get images to display dark/light based on preferred colour scheme
   const content = 
   <>
   <div className={styles.hero}>
-    <h1>{title}</h1>
+    <div className={styles.heroTitle}>
+      
+      <Image src="/logo_long_light.png" alt="Electrium Mobility" fill ></Image>  
+    </div>
     <h3>{ siteDescription }</h3>
     <Button backgroundColour={variables.buttonB} href={"/join"} content={"Join us"} textColour={variables.buttonA}></Button>
     <Button backgroundColour={variables.buttonA} href={"/sponsors"} content={"Become a sponsor"} textColour={variables.buttonB}></Button>

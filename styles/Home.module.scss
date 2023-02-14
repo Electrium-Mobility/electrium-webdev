@@ -1,6 +1,7 @@
 @use "colours.scss";
 
 .hero {
+  margin-top: 5vh;
   text-align: center;
   line-height: 1.5;
   // height: 100vh;
@@ -13,6 +14,13 @@
 
 .hero h3 {
   font-size: 2vw;
+}
+
+.heroTitle {
+  margin: auto;
+  position: relative;
+  width: 80vw;
+  height: 15vw;
 }
 
 .hr {

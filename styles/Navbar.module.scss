@@ -18,6 +18,8 @@
     width: 60%;
     height: 100%;
     margin: 0;
+    top: 0;
+    position: absolute;
 }
 
 // .navbar * :hover {
@@ -52,13 +54,20 @@
 
 
 .logo {
+    position: relative;
     padding: 0.5%;
     display: inline-block;
     text-align: left;
-    width: 40%;
-    font-size: 2vw;
+    width: 20%;
+    height: 80%;
 }
 
 .logo:hover {
     filter: invert(100%);
+}
+
+.addSpace {
+    display: inline-block;
+    width: 20%;
+    height:0%;
 }
