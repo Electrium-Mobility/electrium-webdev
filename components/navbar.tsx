@@ -2,6 +2,7 @@ import styles from "../styles/Navbar.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "./button";
+import Img from "./image";
 import variables from "../styles/_next_access.module.scss";
 
 export default function Navbar() {
@@ -9,10 +10,7 @@ export default function Navbar() {
         <>
         <div className={styles.navbar}>
             <Link className={styles.logo} href="/">
-                <Image src="/logo_long_light.png" alt="Electrium Mobility" fill id="navImg"
-                onLoad={() => (window != undefined && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? 
-                document.getElementById("navImg")!.setAttribute("src", "/logo_long_dark.png"): 
-                document.getElementById("navImg")!.setAttribute("src", "/logo_long_light.png")}></Image>
+                <Img dark="/logo_long_dark.png" light="/logo_long_light.png" alt="Electrium Mobility" id="navImg"></Img>
             </Link>
             <div className={styles.addSpace}></div>
             <div className={styles.rightAlign}>

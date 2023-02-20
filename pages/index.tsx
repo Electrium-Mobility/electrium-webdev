@@ -7,6 +7,7 @@ import {sponsors, Sponsor} from "../data/sponsors";
 import { missionCards, Card } from '../data/cards';
 import Link from 'next/link'
 import Button from '../components/button';
+import Img from '../components/image';
 import { title, siteDescription, missionDescription} from "../data/config";
 
 
@@ -17,11 +18,7 @@ export default function Home() {
   <>
   <div className={styles.hero}>
     <div className={styles.heroTitle}>
-      
-      <Image src="/logo_long_light.png" alt={title} fill id="heroImage"
-      onLoad={() => (window != undefined && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? 
-      (document.getElementById("heroImage")!).setAttribute("src", "/logo_long_dark.png"): 
-      document.getElementById("heroImage")!.setAttribute("src", "/logo_long_light.png")}></Image>  
+      <Img dark="/logo_long_dark.png" light="/logo_long_light.png" alt={title} id="heroImage"></Img>
     </div>
     <h3>{ siteDescription }</h3>
     <Button backgroundColour={variables.buttonB} href={"/join"} content={"Join us"} textColour={variables.buttonA}></Button>
