@@ -8,9 +8,10 @@ $primary-background: white;
 $primary-text: black;
 $button-a: black;
 $button-b: white;
+$button-hover: #08f712; 
 $hr-colour: #d5d5d5;
 $secondary-background: #f4f4f4;
-$circle-background: #d9d9d9;
+$circle-background: #40B549;
 
 // dark mode
 @if (prefers-color-scheme: dark) {
@@ -22,7 +23,8 @@ $circle-background: #d9d9d9;
     $primary-text: white;
     $button-a: white;
     $button-b: black;
+    $button-hover: #08f712;
     $hr-colour: #d5d5d5;
-    $secondary-background: #f4f4f4;
-    $circle-background: #d9d9d9;
+    $secondary-background: #333;
+    $circle-background: #40B549;
 }

@@ -10,7 +10,7 @@ export default function Button(info:{
     return (
         <>
             <button className={styles.button} style={{
-                ["background-color" as any]: info.backgroundColour,
+                ["backgroundColor" as any]: info.backgroundColour,
                 ["color" as any]: info.textColour}}>
                     <Link href={info.href}>{info.content}</Link></button>
         </>
