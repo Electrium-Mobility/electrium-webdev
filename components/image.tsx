@@ -8,7 +8,7 @@ export default function Img(data:{
 }) {
     return (
         <>
-        <Image src="" alt={data.alt} fill id={data.id}
+        <Image src={data.light} alt={data.alt} fill id={data.id}
       onLoad={() => { if (window != undefined && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         (document.getElementById(data.id)!).setAttribute("src", data.dark);
         (document.getElementById(data.id)!).setAttribute("srcset", data.dark);
