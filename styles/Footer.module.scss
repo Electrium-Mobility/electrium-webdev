@@ -41,3 +41,7 @@
     text-align: left;
     display: inline-block;
 }
+
+.footer a:hover {
+    color: colours.$button-hover;
+}

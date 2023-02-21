@@ -9,7 +9,9 @@ export default function Layout(info:{content:ReactElement, name:string}) {
         <>
         <Header title={info.name}/>
         <Navbar/>
+        <div id="#top"></div>
         <main className={styles.main}>{info.content}</main>
+        <div className={styles.topWrapper}><a className={styles.topButton} href="#top">↑</a></div>
         <Footer/>
         </>
     )

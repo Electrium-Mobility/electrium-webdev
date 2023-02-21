@@ -32,7 +32,7 @@ export default function Footer() {
               <li><b>Contact us</b></li>
               <li><Link href={"mailto:" + email }>{ email }</Link></li>
               <br></br>
-              <li><b>@Electrium Mobility 2022</b></li>
+              <li><b>@Electrium Mobility 2023</b></li>
             </ul>
           </div>
         </div>

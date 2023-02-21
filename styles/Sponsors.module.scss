@@ -38,6 +38,10 @@
     padding: 5%;
 }
 
+.bottomSection a:hover {
+    color: colours.$circle-background;
+}
+
 .textContainer {
     width: 60%;
     display: inline-block;

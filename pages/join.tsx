@@ -55,7 +55,7 @@ export default function Join() {
             <h2>FAQ</h2>
             {faq.map((qa:QA, i:number) => (
                 <details key={i} className={styles.question}>
-                    <summary><p className={styles.questionText}>{qa.question}</p><p className={styles.arrowDown}>&#x2228;</p></summary>
+                    <summary><p className={styles.questionText}>{qa.question}</p><p className={styles.arrowDown}>⇓</p></summary>
                     <p>{qa.answer}</p>
                 </details>
             ))}

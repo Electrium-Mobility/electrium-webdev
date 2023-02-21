@@ -8,7 +8,7 @@
     background-color: colours.$navbar-background;
     color:colours.$navbar-text;
     height: 4vw;
-    z-index: 100;
+    z-index: 2;
     
 }
 
@@ -44,7 +44,8 @@
 }
 
 .item:hover {
-    filter: invert(100%);
+    // filter: invert(100%);
+    color: colours.$circle-background;
 }
 
 // .item:hover {

@@ -8,3 +8,25 @@
     width: 100vw;
     overflow-x: hidden;
 }
+
+.topWrapper {
+    width: 5em;
+    height: 5em;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    background-color: #0000;
+}
+
+.topButton {
+    font-size: 3em;
+    color: colours.$primary-text;
+    background-color: colours.$button-hover;
+    transition: 1s;
+}
+
+.topButton:hover {
+    background-color: colours.$circle-background;
+    transition: 1s;
+}
