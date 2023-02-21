@@ -29,4 +29,5 @@
 .topButton:hover {
     background-color: colours.$circle-background;
     transition: 1s;
+    color: invert($color: #000000);
 }

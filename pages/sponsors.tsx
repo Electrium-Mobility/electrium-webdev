@@ -28,6 +28,14 @@ export default function Sponsors() {
                 <h2>{contact.title}</h2>
                 <p>{contact.description}</p>
                 <a href={ "mailto:" + email }>{ email }</a>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br> 
+                {/* very bad sketchy fix */}
             </div>
             <div className={styles.imageContainer}>
                 <Image src="/imgs/contact_us.svg" alt="idk" fill></Image>
