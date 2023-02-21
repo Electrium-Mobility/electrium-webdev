@@ -8,11 +8,11 @@ import { missionCards, Card } from '../data/cards';
 import Link from 'next/link'
 import Button from '../components/button';
 import Img from '../components/image';
-import { title, siteDescription, missionDescription} from "../data/config";
+import { title, siteDescription } from "../data/config";
+import { mission, statement } from '../data/home';
 
 
 export default function Home() {
-  //TODO: get images to display dark/light based on preferred colour scheme
 
   const content = 
   <>
@@ -31,8 +31,8 @@ export default function Home() {
     </div>
   </div>
   <div className={styles.mission}>
-    <h2>Our Mission</h2>
-    <p>{ missionDescription }</p>
+    <h2>{mission.title}</h2>
+    <p>{ mission.description }</p>
     {missionCards.map((missionCard: Card, i:number) => (
       <div key={i} className={styles.missionCard}>
         <div>
@@ -46,8 +46,8 @@ export default function Home() {
   <div className={styles.about}>
     <div className={styles.thingHolder}>
       <div className={styles.textHolder}>
-        <h2>Who we are</h2>
-        <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>{statement.first.title}</h2>
+        <p>{statement.first.description}</p>
       </div>
       <div className={styles.imageHolder}>
         <Image src="/imgs/who_we_are.svg" alt="who we are" fill></Image>
@@ -59,8 +59,8 @@ export default function Home() {
         <Image src="/imgs/what_we_do.svg" alt="what we do" fill></Image>
       </div>
       <div  className={styles.textHolder}>
-        <h2>What we do</h2>
-        <p>Lorem ipsum dolor sit amet consectetur. Tempor dis duis pulvinar. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>{statement.second.title}</h2>
+        <p>{statement.second.description}</p>
       </div>
     </div>
   </div>
