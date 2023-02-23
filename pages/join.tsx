@@ -5,6 +5,7 @@ import styles from "../styles/Join.module.scss"
 import variables from "../styles/_next_access.module.scss"
 import Image from "next/image"
 import { faq, QA } from "../data/faq"
+import { email } from "../data/config"
 import { apply, hero, reasons, Point } from "../data/join"
 
 export default function Join() {
@@ -15,7 +16,7 @@ export default function Join() {
                 <h1>{hero.title}</h1>
                 <p>{hero.description}</p>
             </div>
-            <Button backgroundColour={variables.buttonB} href={"mailto:electriummobility@gmail.com"} content={"Contact us"} textColour={variables.buttonA}></Button>
+            <Button backgroundColour={variables.buttonB} href={"mailto:" + email} content={"Contact us"} textColour={variables.buttonA}></Button>
         </div>
         <div className={styles.whyJoin}>
             <h2>{reasons.title}</h2>

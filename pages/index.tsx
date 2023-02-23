@@ -8,7 +8,7 @@ import { missionCards, Card } from '../data/cards';
 import Link from 'next/link'
 import Button from '../components/button';
 import Img from '../components/image';
-import { title, siteDescription } from "../data/config";
+import { email, title, siteDescription } from "../data/config";
 import { mission, statement } from '../data/home';
 
 
@@ -66,7 +66,7 @@ export default function Home() {
   </div>
   <div  className={styles.contact}>
     <h2>Interested in our work?</h2>
-    <Button backgroundColour={variables.buttonA} href={"mailto:electriummobility@gmail.com"} content={"Contact us"} textColour={variables.buttonB}></Button>
+    <Button backgroundColour={variables.buttonA} href={"mailto:" + email} content={"Contact us"} textColour={variables.buttonB}></Button>
   </div>
   </>
 
